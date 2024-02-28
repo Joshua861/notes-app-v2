@@ -13,9 +13,6 @@
 		divider: boolean = false;
 
 	onMount(() => {
-		onLoad();
-		loading = false;
-
 		notesCopy = get(notes);
 
 		pinnedNotes = notesCopy.filter((note: any) => {
@@ -27,6 +24,8 @@
 		console.log(pinnedNotes);
 
 		divider = pinnedNotes.length !== 0 && unpinnedNotes.length !== 0;
+
+		loading = false;
 	});
 </script>
 

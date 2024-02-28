@@ -8,7 +8,7 @@ export type NoteType = { title: string; content: string; id: string; date: numbe
 
 export function removeEmptyNotes() {
     notes.update((notes) => 
-        notes.filter((note: NoteType) => note.title !== 'No title' || note.content != '')
+        notes.filter((note: NoteType) => (note.title !== 'No title' && note.title !== undefined) || (note.content != '' || note.content !== undefined ))
     )
 }
 
@@ -42,7 +42,7 @@ export function deleteNote(id) {
 
 export function createNote(title: string, content: string, id = uuidv4(), pinned: boolean = false) {
     const note: NoteType = {
-        title: title === '' ? 'No title' : title,
+        title: title === '' || undefined ? 'No title' : title,
         id: id,
         date: Date.now(),
         content: content,
