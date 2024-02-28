@@ -9,14 +9,14 @@
 	import { goto } from '$app/navigation';
 	import { viewNote, findNote, updateNote } from '$lib';
 
-	let id: any, note: NoteType, title: string, content: string;
+	let id: any, note: NoteType, title: string, content: string, pinned: boolean;
 
 	onMount(() => {
 		if ($page.url.searchParams.get('id')) {
 			id = $page.url.searchParams.get('id');
 			note = findNote(id);
 
-			[title, content] = [note.title, note.content];
+			[title, content, pinned] = [note.title, note.content, note.pinned];
 		} else {
 			goto('/notes');
 		}
@@ -29,7 +29,7 @@
 		viewNote(id);
 	}
 
-	$: [content, title], updateNote(id, title, content);
+	$: [content, title], updateNote(id, title, content, pinned);
 </script>
 
 <Prose class="h-[100svh] w-[100svw]">

@@ -8,7 +8,9 @@ export type NoteType = { title: string; content: string; id: string; date: numbe
 
 export function removeEmptyNotes() {
     notes.update((notes) => 
-        notes.filter((note: NoteType) => (note.title !== 'No title' && note.title !== undefined) || (note.content != '' || note.content !== undefined ))
+        notes.filter((note: NoteType) => {
+            return (note.title !== 'No title' && note.title !== undefined && note.title !== '') || (note.content !== '' && note.content !== undefined && note.content !== '');
+        })
     )
 }
 
@@ -54,9 +56,9 @@ export function createNote(title: string, content: string, id = uuidv4(), pinned
     });
 }
 
-export function updateNote(id: string, title: string, content: string) {
+export function updateNote(id: string, title: string, content: string, pinned: boolean) {
     deleteNote(id)
-    createNote(title, content, id)
+    createNote(title, content, id, pinned)
 }
 
 export function viewNote(id: string) {

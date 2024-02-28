@@ -10,7 +10,7 @@
 		content: string = '',
 		id = uuid();
 
-	$: [content, title], updateNote(id, title, content);
+	$: [content, title], updateNote(id, title, content, false);
 
 	function done() {
 		viewNote(id);

@@ -2,9 +2,9 @@
 	import '../app.pcss';
 	import Navbar from '$lib/navbar.svelte';
 	import { onLoad } from '$lib';
-	import { onMount } from 'svelte';
+	import { beforeUpdate } from 'svelte';
 
-	onMount(() => {
+	beforeUpdate(() => {
 		onLoad();
 	});
 </script>
