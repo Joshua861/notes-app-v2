@@ -30,51 +30,51 @@ export const settings = persisted<Settings>('settings', {
 export const themes = {
 	zinc: {
 		name: 'Zinc',
-		path: '/themes/colors/zinc.pcss'
+		path: '/themes/colors/zinc.css'
 	},
 	slate: {
 		name: 'Slate',
-		path: '/themes/colors/slate.pcss'
+		path: '/themes/colors/slate.css'
 	},
 	stone: {
 		name: 'Stone',
-		path: '/themes/colors/stone.pcss'
+		path: '/themes/colors/stone.css'
 	},
 	gray: {
 		name: 'Gray',
-		path: '/themes/colors/gray.pcss'
+		path: '/themes/colors/gray.css'
 	},
 	neutral: {
 		name: 'Neutral',
-		path: '/themes/colors/neutral.pcss'
+		path: '/themes/colors/neutral.css'
 	},
 	red: {
 		name: 'Red',
-		path: '/themes/colors/red.pcss'
+		path: '/themes/colors/red.css'
 	},
 	rose: {
 		name: 'Rose',
-		path: '/themes/colors/rose.pcss'
+		path: '/themes/colors/rose.css'
 	},
 	orange: {
 		name: 'Orange',
-		path: '/themes/colors/orange.pcss'
+		path: '/themes/colors/orange.css'
 	},
 	green: {
 		name: 'Green',
-		path: '/themes/colors/green.pcss'
+		path: '/themes/colors/green.css'
 	},
 	blue: {
 		name: 'Blue',
-		path: '/themes/colors/blue.pcss'
+		path: '/themes/colors/blue.css'
 	},
 	yellow: {
 		name: 'Yellow',
-		path: '/themes/colors/yellow.pcss'
+		path: '/themes/colors/yellow.css'
 	},
 	violet: {
 		name: 'Violet',
-		path: '/themes/colors/violet.pcss'
+		path: '/themes/colors/violet.css'
 	}
 };
 
@@ -82,47 +82,47 @@ export const fonts = {
 	base: {
 		inter: {
 			name: 'Inter',
-			path: '/themes/fonts/base/inter.pcss'
+			path: '/themes/fonts/base/inter.css'
 		},
 		roboto: {
 			name: 'Roboto',
-			path: '/themes/fonts/base/roboto.pcss'
+			path: '/themes/fonts/base/roboto.css'
 		},
 		merriweather: {
 			name: 'Merriweather',
-			path: '/themes/fonts/base/merriweather.pcss'
+			path: '/themes/fonts/base/merriweather.css'
 		}
 	},
 	title: {
 		bebasNeue: {
 			name: 'Bebas Neue',
-			path: '/themes/fonts/title/bebas neue.pcss'
+			path: '/themes/fonts/title/bebas neue.css'
 		},
 		inter: {
 			name: 'Inter',
-			path: '/themes/fonts/title/inter.pcss'
+			path: '/themes/fonts/title/inter.css'
 		},
 		merriweather: {
 			name: 'Merriweather',
-			path: '/themes/fonts/title/merriweather.pcss'
+			path: '/themes/fonts/title/merriweather.css'
 		},
 		montserrat: {
 			name: 'Montserrat',
-			path: '/themes/fonts/title/montserrat.pcss'
+			path: '/themes/fonts/title/montserrat.css'
 		}
 	},
     mono: {
         jetbrains: {
 			name: 'Jetbrains Mono',
-			path: '/themes/fonts/mono/jetbrains.pcss'
+			path: '/themes/fonts/mono/jetbrains.css'
 		},
         roboto: {
 			name: 'Roboto Mono',
-			path: '/themes/fonts/mono/roboto.pcss'
+			path: '/themes/fonts/mono/roboto.css'
 		},
         space: {
 			name: 'Space Mono',
-			path: '/themes/fonts/mono/space.pcss'
+			path: '/themes/fonts/mono/space.css'
 		},
     }
 };
