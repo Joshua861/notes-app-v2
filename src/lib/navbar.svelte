@@ -16,6 +16,10 @@
 		{
 			title: 'About',
 			path: '/about'
+		},
+		{
+			title: 'Settings',
+			path: '/settings'
 		}
 	];
 </script>

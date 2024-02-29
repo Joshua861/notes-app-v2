@@ -5,6 +5,7 @@
 	import { toast } from 'svelte-sonner';
 	import { getNotesData, loadNoteData } from '$lib';
 	import Textarea from '$lib/components/ui/textarea/textarea.svelte';
+	import { goto } from '$app/navigation';
 
 	let textboxContent: string;
 
@@ -22,6 +23,7 @@
 			description:
 				"Probably; if they don't show up or something weird happened, the data you put in isn't valid."
 		});
+		goto('/notes');
 	}
 </script>
 

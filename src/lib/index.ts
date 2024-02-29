@@ -3,6 +3,7 @@ import save from 'save-file';
 import { goto } from '$app/navigation';
 import { v4 as uuidv4 } from 'uuid';
 import { get } from 'svelte/store';
+import { applySettings } from './settings';
 
 export type NoteType = { title: string; content: string; id: string; date: number; pinned: boolean }
 
@@ -17,7 +18,7 @@ export function removeEmptyNotes() {
 export function onLoad() {
     removeEmptyNotes();
     spawnHelp();
-    console.log(get(notes));
+    applySettings();
 }
 
 export function findNote(id) {
