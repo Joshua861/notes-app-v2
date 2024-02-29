@@ -11,6 +11,6 @@
 	<a class="text-xl font-bold underline-offset-4" href="/note?id={note.id}">{note.title}</a>
 	<br />
 	<span class="font-mono text-neutral-500">
-		<Time timestamp={note.time} />
+		<Time timestamp={note.date} />
 	</span>
 </div>
