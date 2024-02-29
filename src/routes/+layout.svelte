@@ -3,6 +3,7 @@
 	import Navbar from '$lib/navbar.svelte';
 	import { onLoad } from '$lib';
 	import { beforeUpdate } from 'svelte';
+	import { Toaster } from '$lib/components/ui/sonner';
 
 	beforeUpdate(() => {
 		onLoad();
@@ -19,3 +20,4 @@
 
 <Navbar />
 <slot />
+<Toaster position="bottom-center" richColors theme="dark" />

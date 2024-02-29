@@ -42,11 +42,11 @@ export function deleteNote(id) {
     notes.update((n) => n.filter((note) => note.id !== id))
 }
 
-export function createNote(title: string, content: string, id = uuidv4(), pinned: boolean = false) {
+export function createNote(title: string, content: string, id = uuidv4(), pinned: boolean = false, date = Date.now()) {
     const note: NoteType = {
         title: title === '' || undefined ? 'No title' : title,
         id: id,
-        date: Date.now(),
+        date: date,
         content: content,
         pinned: pinned,
     }
@@ -56,7 +56,7 @@ export function createNote(title: string, content: string, id = uuidv4(), pinned
     });
 }
 
-export function updateNote(id: string, title: string, content: string, pinned: boolean) {
+export function updateNote(id: string, title: string, content: string, pinned: boolean, date = Date.now()) {
     deleteNote(id)
     createNote(title, content, id, pinned)
 }
@@ -115,4 +115,22 @@ export function spawnHelp() {
                         
         All the notes inputted here are stored on-device, they are not uploaded anywhere and aren't accessable by anyone but you; this also means that they aren't synced between devices. They *are* autosaved; if you close the tab mid-note, that note will still be there when you come back.`.replace(/^\s+/gm, ''), 'how-to-use', true)
     }
+}
+
+export function getNotesData() {
+    const notesValue = get(notes)
+    const json = JSON.stringify(notesValue)
+    const b64 = btoa(json)
+
+    return b64
+}
+
+export function loadNoteData(data: string) {
+    const json = atob(data)
+    notes.set(JSON.parse(json))
+}
+
+export function replaceNote(id: string, note: NoteType) {
+    deleteNote(id);
+    createNote(note.title, note.content, note.id, note.pinned, note.date)
 }
