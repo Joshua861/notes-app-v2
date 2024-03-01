@@ -5,6 +5,7 @@
 	import { beforeUpdate, onMount } from 'svelte';
 	import { Toaster } from '$lib/components/ui/sonner';
 	import { Loader } from 'lucide-svelte';
+	import { ModeWatcher } from 'mode-watcher';
 
 	let mounted = false;
 
@@ -34,5 +35,8 @@
 {/if}
 
 <Navbar />
+
 <slot />
+
 <Toaster position="bottom-center" richColors theme="dark" />
+<ModeWatcher />

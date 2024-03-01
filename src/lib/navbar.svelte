@@ -44,6 +44,9 @@
 				<DropdownMenu.Item>
 					<a href="/tools/transfer"> Transfer data </a>
 				</DropdownMenu.Item>
+				<DropdownMenu.Item>
+					<a href="/tools/feedback"> Send feedback </a>
+				</DropdownMenu.Item>
 			</DropdownMenu.Group>
 		</DropdownMenu.Content>
 	</DropdownMenu.Root>

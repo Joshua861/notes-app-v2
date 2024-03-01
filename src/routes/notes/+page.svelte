@@ -1,13 +1,13 @@
 <script lang="ts">
 	import { notes } from '$lib/notes';
 	import { onMount } from 'svelte';
-	import { onLoad, type NoteType } from '$lib';
 	import Prose from '$lib/prose.svelte';
 	import { get } from 'svelte/store';
 	import NotesEntry from '$lib/notesEntry.svelte';
+	import { type NoteType } from '$lib';
 
 	let loading = true;
-	let notesCopy: Array<NotesType>,
+	let notesCopy: Array<NoteType>,
 		pinnedNotes: any,
 		unpinnedNotes: any,
 		divider: boolean = false;
@@ -46,7 +46,7 @@
 				<NotesEntry {note} />
 			{/each}
 			{#if divider}
-				<hr />
+				<hr class="my-5" />
 			{/if}
 			{#each unpinnedNotes as note}
 				<NotesEntry {note} />
