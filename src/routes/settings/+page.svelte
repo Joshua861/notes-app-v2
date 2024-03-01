@@ -41,6 +41,8 @@
 			}
 		}
 	}
+
+	let colors = ['background', 'primary', 'secondary', 'destructive'];
 </script>
 
 <svelte:head>
@@ -149,6 +151,16 @@
 			voluptate, deserunt excepturi maiores temporibus? Veniam eius quisquam maiores delectus magni
 			necessitatibus ipsa nam!</code
 		>
+	</div>
+
+	<h2>Colors</h2>
+
+	<div class="grid grid-cols-4 rounded-xl">
+		{#each colors as color}
+			<div class="aspect-square rounded-xl border bg-{color} flex items-center justify-center">
+				<p class="rounded-lg bg-background/80 px-3 py-1">{color}</p>
+			</div>
+		{/each}
 	</div>
 </Prose>
 
