@@ -50,6 +50,7 @@
 <Prose>
 	<h1>Settings</h1>
 
+<div class="flex flex-col [&>*]:flex-1">
 	<DropdownMenu.Root>
 		<DropdownMenu.Trigger>
 			<Button>Change theme</Button>
@@ -117,6 +118,7 @@
 			</DropdownMenu.RadioGroup>
 		</DropdownMenu.Content>
 	</DropdownMenu.Root>
+</div>
 
 	<h2>Theme showcase</h2>
 	<p>
