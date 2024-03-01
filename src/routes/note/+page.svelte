@@ -44,9 +44,6 @@
 			unpinNote(id);
 		}
 	}
-
-	function changeDate() {}
-
 	$: pinned, pin();
 </script>
 

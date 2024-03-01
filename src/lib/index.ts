@@ -59,7 +59,7 @@ export function createNote(title: string, content: string, id = uuidv4(), pinned
 
 export function updateNote(id: string, title: string, content: string, pinned: boolean, date = Date.now()) {
     deleteNote(id)
-    createNote(title, content, id, pinned)
+    createNote(title, content, id, pinned, date)
 }
 
 export function viewNote(id: string) {
@@ -75,7 +75,7 @@ export function pinNote(id: string) {
     }
 
     deleteNote(id)
-    createNote(note.title, note.content, note.id, true)
+    createNote(note.title, note.content, note.id, true, note.date)
 }
 
 export function unpinNote(id: string) {
@@ -87,7 +87,7 @@ export function unpinNote(id: string) {
     }
 
     deleteNote(id)
-    createNote(note.title, note.content, note.id, false)
+    createNote(note.title, note.content, note.id, false, note.date)
 }
 
 export function spawnHelp() {

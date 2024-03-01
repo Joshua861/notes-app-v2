@@ -37,7 +37,8 @@
 	<p>
 		This lets you move all your notes from one device to the other. When you press the copy data
 		button, it copies all the data from all your notes to the clipboard, send that data to another
-		device and use the paste data button; all your notes will have been transferred over.
+		device, and, on there, paste the data in the text box below and press the load date button, all
+		your notes will show up on that device.
 	</p>
 
 	<div class="flex gap-3 [&>*]:flex-1">
