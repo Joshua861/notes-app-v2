@@ -44,8 +44,8 @@
 		if (!error) {
 			feedback = '';
 
-			toast.success('Report submitted', {
-				description: 'We will look it over, if it fits, it will be added to the list.'
+			toast.success('Submitted!', {
+				description: 'Thanks :D I'll read it and make changes accordingly. '
 			});
 		}
 
