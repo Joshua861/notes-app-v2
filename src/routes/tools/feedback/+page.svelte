@@ -53,6 +53,10 @@
 	}
 </script>
 
+<svelte:head>
+	<title>Send Feedback</title>
+</svelte:head>
+
 <div class="prose prose-invert mx-auto p-5">
 	<h1>Send Feedback</h1>
 
