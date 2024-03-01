@@ -62,7 +62,7 @@
 	{#if note}
 		<h1>{note.title}</h1>
 		<span class="font-mono text-neutral-500">
-			<Time timestamp={note.date} />
+			<Time timestamp={note.date} format="dd/MM" />
 			<DeleteButton noteID={id} />
 			<Button on:click={edit} variant="link" size="icon"><SquarePen class="h-4 w-4" /></Button>
 			<DateChangerButton noteID={id} />
