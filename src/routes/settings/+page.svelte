@@ -122,22 +122,27 @@
 
 	<h2>Fonts</h2>
 
-	<div class="flex flex-col gap-5">
-		<h1 class="fade-text m-0 max-w-full overflow-hidden whitespace-nowrap text-6xl">
+	<div class="mt-10 flex flex-col gap-5">
+		<h1
+			class="fade-text mx-5 my-0 max-w-full overflow-hidden whitespace-nowrap text-4xl md:m-0 md:text-6xl"
+		>
 			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto nesciunt quia assumenda vitae
 			sint voluptatem porro expedita atque iste laborum, sit quis amet velit ut. Inventore
 			aspernatur necessitatibus sint ea consequatur placeat quis. Corporis culpa asperiores
 			voluptate, deserunt excepturi maiores temporibus? Veniam eius quisquam maiores delectus magni
 			necessitatibus ipsa nam!
 		</h1>
-		<p class="fade-text m-0 max-w-full overflow-hidden whitespace-nowrap text-6xl">
+		<p
+			class="fade-text mx-5 my-0 max-w-full overflow-hidden whitespace-nowrap text-4xl md:m-0 md:text-6xl"
+		>
 			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto nesciunt quia assumenda vitae
 			sint voluptatem porro expedita atque iste laborum, sit quis amet velit ut. Inventore
 			aspernatur necessitatibus sint ea consequatur placeat quis. Corporis culpa asperiores
 			voluptate, deserunt excepturi maiores temporibus? Veniam eius quisquam maiores delectus magni
 			necessitatibus ipsa nam!
 		</p>
-		<code class="fade-text m-0 max-w-full overflow-hidden whitespace-nowrap text-6xl"
+		<code
+			class="fade-text mx-5 my-0 max-w-full overflow-hidden whitespace-nowrap text-4xl md:m-0 md:text-6xl"
 			>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto nesciunt quia assumenda vitae
 			sint voluptatem porro expedita atque iste laborum, sit quis amet velit ut. Inventore
 			aspernatur necessitatibus sint ea consequatur placeat quis. Corporis culpa asperiores
@@ -147,7 +152,7 @@
 	</div>
 </Prose>
 
-<style>
+<style lang="postcss">
 	.fade-text {
 		position: relative;
 		display: inline-block;
