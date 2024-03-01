@@ -45,7 +45,7 @@
 			feedback = '';
 
 			toast.success('Submitted!', {
-				description: 'Thanks :D I'll read it and make changes accordingly. '
+				description: "Thanks :D I'll read it and make changes accordingly. "
 			});
 		}
 
