@@ -50,10 +50,10 @@
 <Prose>
 	<h1>Settings</h1>
 
-<div class="flex flex-col gap-3 [&>*]:flex-1">
+<div class="flex flex-col gap-3 [&>*]:flex-1 [&>*]:w-full">
 	<DropdownMenu.Root>
 		<DropdownMenu.Trigger>
-			<Button class="flex-1">Change theme</Button>
+			<Button class="flex-1 w-full">Change theme</Button>
 		</DropdownMenu.Trigger>
 		<DropdownMenu.Content>
 			<DropdownMenu.Label>Themes</DropdownMenu.Label>
@@ -70,7 +70,7 @@
 
 	<DropdownMenu.Root>
 		<DropdownMenu.Trigger>
-			<Button class="flex-1">Change main font</Button>
+			<Button class="flex-1 w-full">Change main font</Button>
 		</DropdownMenu.Trigger>
 		<DropdownMenu.Content>
 			<DropdownMenu.Label>Fonts</DropdownMenu.Label>
@@ -87,7 +87,7 @@
 
 	<DropdownMenu.Root>
 		<DropdownMenu.Trigger>
-			<Button class="flex-1">Change title font</Button>
+			<Button class="flex-1 w-full">Change title font</Button>
 		</DropdownMenu.Trigger>
 		<DropdownMenu.Content>
 			<DropdownMenu.Label>Fonts</DropdownMenu.Label>
@@ -104,7 +104,7 @@
 
 	<DropdownMenu.Root>
 		<DropdownMenu.Trigger>
-			<Button class="flex-1">Change mono font</Button>
+			<Button class="flex-1 w-full">Change mono font</Button>
 		</DropdownMenu.Trigger>
 		<DropdownMenu.Content>
 			<DropdownMenu.Label>Fonts</DropdownMenu.Label>
