@@ -2,11 +2,18 @@
 	import '../app.pcss';
 	import Navbar from '$lib/navbar.svelte';
 	import { onLoad } from '$lib';
-	import { beforeUpdate } from 'svelte';
+	import { beforeUpdate, onMount } from 'svelte';
 	import { Toaster } from '$lib/components/ui/sonner';
+	import { Loader } from 'lucide-svelte';
+
+	let mounted = false;
 
 	beforeUpdate(() => {
 		onLoad();
+	});
+
+	onMount(() => {
+		mounted = true;
 	});
 </script>
 
@@ -17,6 +24,14 @@
 	<link rel="manifest" href="/site.webmanifest" />
 	<meta name="theme-color" content="#111213" />
 </svelte:head>
+
+{#if !mounted}
+	<div class="absolute z-10 m-0 flex h-screen w-screen items-center justify-center bg-zinc-950">
+		<div class="flex items-center justify-center space-x-1 text-sm text-gray-400">
+			<Loader class="animate-spin" size="48" />
+		</div>
+	</div>
+{/if}
 
 <Navbar />
 <slot />

@@ -138,10 +138,6 @@ Object.keys(fonts).forEach(fontType => {
     });
 });
 
-console.log(fonts);
-console.log(themes);
-
-
 export function applySettings() {
     const settingsValue = get(settings);
 
